@@ -1,4 +1,4 @@
-let urlRest = 'https://ge0eef664d9e3ed-db202110041501.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/cantante/cantante';
+let urlRest = 'https://telemedicina.jakemate.net:7141/api/webservice/metodo';
 var codigoToken='NJKJNTL8SNKH5JJRTS32ZGSIIDPGHLU6KRXLQMLMJJU8MD7EY5TSWMGD2D6Z'
 var codigoApikey='ISSTIXZTV53RZURJKTZD3MXVMEW7X3'
 
