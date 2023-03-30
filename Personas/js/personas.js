@@ -50,6 +50,30 @@ function registrarPersona() {
   let apellido= $("#apellido").val();
   let nroDocumento= $("#nroDocumento").val();
 
+  if (!nombre || !apellido || !nroDocumento) {
+    alert('Por favor complete todos los campos');
+    limpiarFormulario();
+    return;
+  }
+
+  if (nombre.length > 50) {
+    alert('El nombre supera la cantidad de caracteres');
+    limpiarFormulario();
+    return;
+  }
+
+  if (apellido.length > 50) {
+    alert('El apellido supera la cantidad de caracteres');
+    limpiarFormulario();
+    return;
+  }
+
+  if (nroDocumento.length > 50) {
+    alert('El numero de documento supera la cantidad de caracteres');
+    limpiarFormulario();
+    return;
+  }
+
   console.log("DATOS A AGREGAR", nombre, apellido, nroDocumento);
 
   $.ajax({
@@ -146,6 +170,30 @@ function actualizarPersona(id) {
   let nombre= $("#nombreEditado").val();
   let apellido= $("#apellidoEditado").val();
   let nroDocumento= $("#nroDocumentoEditado").val();
+
+  if (!nombre || !apellido || !nroDocumento) {
+    alert('Todos los campos son requeridos');
+    limpiarFormulario();
+    return;
+  }
+
+  if (nombre.length > 50) {
+    alert('El nombre supera la cantidad de caracteres');
+    limpiarFormulario();
+    return;
+  }
+
+  if (apellido.length > 50) {
+    alert('El apellido supera la cantidad de caracteres');
+    limpiarFormulario();
+    return;
+  }
+
+  if (nroDocumento.length > 50) {
+    alert('El numero de documento supera la cantidad de caracteres');
+    limpiarFormulario();
+    return;
+  }
 
   console.log("DATOS A EDITAR", nombre, apellido, nroDocumento);
 
